@@ -1,0 +1,9 @@
+---
+title: "Publishing in Markdown: From bookdown to DocC"
+author: "Nio De Backer"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+
+# Hello World

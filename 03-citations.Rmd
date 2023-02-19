@@ -1,0 +1,5 @@
+# Citations
+
+Reference items in your bibliography file(s) using @key.
+
+https://bookdown.org/marcia1204/week3_hw_siyeon/footnotes-and-citations.html
