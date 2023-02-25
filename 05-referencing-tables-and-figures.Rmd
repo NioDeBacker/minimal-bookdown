@@ -1,4 +1,6 @@
 # Referencing tables and figures
 
-\@ref(fig:chunk-label)
-\@ref(tab:chunk-label)
+Referencing is very easy using the ids assigned to tables and figures.
+
+See the table: \@ref(tab:simple-table)
+See the figure: \@ref(fig:simple-figure)

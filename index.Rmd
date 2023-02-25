@@ -1,9 +1,16 @@
 ---
 title: "Publishing in Markdown: From bookdown to DocC"
 author: "Nio De Backer"
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
 site: bookdown::bookdown_site
 documentclass: book
 output:
   bookdown::gitbook: default
+---
 
-# Hello World
+# Preface {-}
+
+This book is written to showcase some of the functionality of bookdown.

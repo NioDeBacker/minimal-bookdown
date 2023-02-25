@@ -1,4 +1,0 @@
-# Referencing tables and figures
-
-\@ref(fig:chunk-label)
-\@ref(tab:chunk-label)

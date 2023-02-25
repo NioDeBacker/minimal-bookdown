@@ -1,10 +1,15 @@
-hello-world
+tab:simple-table
+tab:unnamed-chunk-1
+fig:simple-figure
 numbered-and-unnumbered-headings
 numbered-headings
 headings-in-table-of-contents
 table-of-contents
 citations
 numbered-tables-and-figures
+tables
+figures
 referencing-tables-and-figures
 footnotes
 mathematical-formulas-and-expressions
+bibliography

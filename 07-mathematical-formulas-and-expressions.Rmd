@@ -1,1 +1,3 @@
 # Mathematical formulas and expressions
+
+bookdown uses MathJax for LaTeX style math expressions.

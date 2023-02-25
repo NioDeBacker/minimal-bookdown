@@ -17,4 +17,4 @@ output:
     toc_float: true
 ```
 
-if we omit *toc_float* we get a large one page book with a toc.
+if we omit *toc_float* we get a large one page book with a toc at the start.

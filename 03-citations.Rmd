@@ -1,5 +1,10 @@
 # Citations
 
 Reference items in your bibliography file(s) using @key.
-
-https://bookdown.org/marcia1204/week3_hw_siyeon/footnotes-and-citations.html
+In the index.Rmd file, in the YAML pass the .bib files to the bibliography key.
+In this YAML there are a few options to style your citations.
+For example when we write 
+```md
+R Markdown [@xie2015]
+````
+We get: R Markdown [@xie2015]

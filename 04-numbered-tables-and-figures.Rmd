@@ -1,1 +1,43 @@
 # Numbered tables and figures
+
+## Tables
+
+We can use regular markdown tables and pandocs extended table syntax. These aren't numbered.
+
+| wake up (wake up) | Grab a brush and put a little make-up | 
+|:-:|:-:|
+|Hide the scars to fade away the shake-up|hide the scars to fade away the-|
+|Why'd you leave the keys upon the table?|Here you go create another fable, you wanted to|
+
+Using the label functionality we can still label them
+
+Table: (\#tab:simple-table) a simple caption
+
+| simple | table |
+|:-:|:-:|
+|example|two|
+
+However bookdown prefers we use the knitr functions.
+
+```{r}
+knitr::kable(
+  head(mtcars[, 1:8], 10), booktabs = TRUE,
+  caption = 'A table of the first 10 rows of the mtcars data.'
+)
+```
+
+## Figures
+
+Normally you would generate figures using R code.
+
+```{r}
+  knitr::include_graphics("https://cdn.datamentor.io/wp-content/uploads/2017/11/r-plot-function.png") 
+```
+
+Regular image links in markdown work too
+
+![A caption for a figure](https://cdn.datamentor.io/wp-content/uploads/2017/11/r-plot-function.png)
+
+Using the same label but with a fig prefix we can number this table aswell.
+
+![(\#fig:simple-figure) a second caption](https://cdn.datamentor.io/wp-content/uploads/2017/11/r-plot-function.png)
