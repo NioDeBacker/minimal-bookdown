@@ -190,7 +190,21 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="mathematical-formulas-and-expressions" class="section level1 hasAnchor" number="7">
 <h1><span class="header-section-number">7</span> Mathematical formulas and expressions<a href="mathematical-formulas-and-expressions.html#mathematical-formulas-and-expressions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>bookdown uses MathJax for LaTeX style math expressions.</p>
+<p>bookdown uses MathJax for LaTeX style math expressions.
+Using the same labels we already saw we can number and reference these aswell.</p>
+<p>We can do this inline between two <code>$</code> <code>$</code>:<span class="math inline">\(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\)</span></p>
+<p>Or on a new paragraph using double <code>$$</code> <code>$$</code>:
+<span class="math display">\[f(k) = {n \choose k} p^{k} (1-p)^{n-k}\]</span></p>
+<p>We can also use environments:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb6-1"><a href="mathematical-formulas-and-expressions.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">equation</span>}<span class="ss"> </span></span>
+<span id="cb6-2"><a href="mathematical-formulas-and-expressions.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  f</span><span class="sc">\left</span><span class="ss">(k</span><span class="sc">\right</span><span class="ss">) = </span><span class="sc">\binom</span><span class="ss">{n}{k} p^k</span><span class="sc">\left</span><span class="ss">(1-p</span><span class="sc">\right</span><span class="ss">)^{n-k}</span></span>
+<span id="cb6-3"><a href="mathematical-formulas-and-expressions.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  (</span><span class="sc">\#</span><span class="ss">eq:binom)</span></span>
+<span id="cb6-4"><a href="mathematical-formulas-and-expressions.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">equation</span>} </span></code></pre></div>
+<p>It renders the equation below:</p>
+<p><span class="math display" id="eq:binom">\[\begin{equation}
+f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k} \tag{7.1}
+\end{equation}\]</span></p>
+<p>You may refer to it using <code>\@ref(eq:binom)</code>, e.g., see Equation <a href="mathematical-formulas-and-expressions.html#eq:binom">(7.1)</a>.</p>
 
 </div>
             </section>
@@ -253,6 +267,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

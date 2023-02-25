@@ -1,6 +1,7 @@
 tab:simple-table
 tab:unnamed-chunk-1
 fig:simple-figure
+eq:binom
 numbered-and-unnumbered-headings
 numbered-headings
 headings-in-table-of-contents
