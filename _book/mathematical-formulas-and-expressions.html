@@ -154,11 +154,10 @@ div.csl-indent {
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html"><i class="fa fa-check"></i><b>1</b> Numbered and unnumbered headings</a>
+<li class="chapter" data-level="1" data-path="headers.html"><a href="headers.html"><i class="fa fa-check"></i><b>1</b> Headers</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#numbered-headings"><i class="fa fa-check"></i><b>1.1</b> Numbered headings</a></li>
-<li class="chapter" data-level="" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#unnumbered-headings"><i class="fa fa-check"></i>Unnumbered headings</a></li>
-<li class="chapter" data-level="1.2" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#headings-in-table-of-contents"><i class="fa fa-check"></i><b>1.2</b> headings in table of contents</a></li>
+<li class="chapter" data-level="1.1" data-path="headers.html"><a href="headers.html#a-numbered-subheader"><i class="fa fa-check"></i><b>1.1</b> A numbered subheader</a></li>
+<li class="chapter" data-level="" data-path="headers.html"><a href="headers.html#an-unnumbered-subheader"><i class="fa fa-check"></i>An unnumbered subheader</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="table-of-contents.html"><a href="table-of-contents.html"><i class="fa fa-check"></i><b>2</b> Table of contents</a></li>
 <li class="chapter" data-level="3" data-path="citations.html"><a href="citations.html"><i class="fa fa-check"></i><b>3</b> Citations</a></li>
@@ -167,9 +166,18 @@ div.csl-indent {
 <li class="chapter" data-level="4.1" data-path="numbered-tables-and-figures.html"><a href="numbered-tables-and-figures.html#tables"><i class="fa fa-check"></i><b>4.1</b> Tables</a></li>
 <li class="chapter" data-level="4.2" data-path="numbered-tables-and-figures.html"><a href="numbered-tables-and-figures.html#figures"><i class="fa fa-check"></i><b>4.2</b> Figures</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html"><i class="fa fa-check"></i><b>5</b> Referencing tables and figures</a></li>
+<li class="chapter" data-level="5" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html"><i class="fa fa-check"></i><b>5</b> Referencing Tables and Figures</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html#referencing-tables"><i class="fa fa-check"></i><b>5.1</b> Referencing tables</a></li>
+<li class="chapter" data-level="5.2" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html#referencing-figures"><i class="fa fa-check"></i><b>5.2</b> Referencing figures</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>6</b> Footnotes</a></li>
-<li class="chapter" data-level="7" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html"><i class="fa fa-check"></i><b>7</b> Mathematical formulas and expressions</a></li>
+<li class="chapter" data-level="7" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html"><i class="fa fa-check"></i><b>7</b> Mathematical formulas and expressions</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#inline"><i class="fa fa-check"></i><b>7.1</b> Inline</a></li>
+<li class="chapter" data-level="7.2" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#paragraphed"><i class="fa fa-check"></i><b>7.2</b> Paragraphed</a></li>
+<li class="chapter" data-level="7.3" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#multi-step"><i class="fa fa-check"></i><b>7.3</b> Multi step</a></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>8</b> Bibliography</a></li>
 </ul>
 
@@ -190,22 +198,31 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="mathematical-formulas-and-expressions" class="section level1 hasAnchor" number="7">
 <h1><span class="header-section-number">7</span> Mathematical formulas and expressions<a href="mathematical-formulas-and-expressions.html#mathematical-formulas-and-expressions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>bookdown uses MathJax for LaTeX style math expressions.
-Using the same labels we already saw we can number and reference these aswell.</p>
-<p>We can do this inline between two <code>$</code> <code>$</code>:<span class="math inline">\(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\)</span></p>
-<p>Or on a new paragraph using double <code>$$</code> <code>$$</code>:
+<div id="inline" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Inline<a href="mathematical-formulas-and-expressions.html#inline" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This is an example of an inline mathematical expression:<span class="math inline">\(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\)</span></p>
+</div>
+<div id="paragraphed" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Paragraphed<a href="mathematical-formulas-and-expressions.html#paragraphed" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This is an example of a formula that starts on a new paragraph:
 <span class="math display">\[f(k) = {n \choose k} p^{k} (1-p)^{n-k}\]</span></p>
-<p>We can also use environments:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb6-1"><a href="mathematical-formulas-and-expressions.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">equation</span>}<span class="ss"> </span></span>
-<span id="cb6-2"><a href="mathematical-formulas-and-expressions.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  f</span><span class="sc">\left</span><span class="ss">(k</span><span class="sc">\right</span><span class="ss">) = </span><span class="sc">\binom</span><span class="ss">{n}{k} p^k</span><span class="sc">\left</span><span class="ss">(1-p</span><span class="sc">\right</span><span class="ss">)^{n-k}</span></span>
-<span id="cb6-3"><a href="mathematical-formulas-and-expressions.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  (</span><span class="sc">\#</span><span class="ss">eq:binom)</span></span>
-<span id="cb6-4"><a href="mathematical-formulas-and-expressions.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">equation</span>} </span></code></pre></div>
-<p>It renders the equation below:</p>
+</div>
+<div id="multi-step" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Multi step<a href="mathematical-formulas-and-expressions.html#multi-step" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This is an example of a multiline expression:</p>
 <p><span class="math display" id="eq:binom">\[\begin{equation}
-f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k} \tag{7.1}
+f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k}\\
+E=mc^2\\
+a^2 = b2 + c^2
+\tag{7.1}
 \end{equation}\]</span></p>
-<p>You may refer to it using <code>\@ref(eq:binom)</code>, e.g., see Equation <a href="mathematical-formulas-and-expressions.html#eq:binom">(7.1)</a>.</p>
+<div class="proof">
+<p><span id="unlabeled-div-1" class="proof"><em>Proof</em> (Theorem). </span>Example of a theorem.</p>
+<p><span class="math display">\[f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k}\]</span></p>
+<p><span class="math display">\[f\left(k\right)=\binom{n}{k}p^k\left(p+1-2p\right)^{n-k}\]</span></p>
+</div>
 
+</div>
 </div>
             </section>
 

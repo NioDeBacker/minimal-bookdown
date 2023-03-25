@@ -1,15 +1,12 @@
-# Numbered headings level one
 
-## Numbered headings level two
+# Headers
 
-Numbering can be turned off using numbered_sections: false in the index.Rmd YAML.
+This page showcases the support for numbered and unnumbered headers.
 
-Headings can be unnumbered by adding the attribute - or .unnumbered to them.
-E.g. 
-# heading {-}
+## A numbered subheader
 
-This makes use of pandoc markdow header attributes extension.
+The content.
 
-## Headings in table of contents
+## An unnumbered subheader {-}
 
-Unnumbered headings will still appear in the table of contents.
+The content.

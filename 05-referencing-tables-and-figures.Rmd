@@ -1,6 +1,13 @@
-# Referencing tables and figures
+# Referencing Tables and Figures
 
-Referencing is very easy using the ids assigned to tables and figures.
 
-See the table: \@ref(tab:simple-table)
-See the figure: \@ref(fig:simple-figure)
+## Referencing tables
+
+See the first table: \@ref(tab:table-1)
+
+See the second table: \@ref(tab:table-2)
+
+
+## Referencing figures
+
+See the first figure: \@ref(fig:figure-1)

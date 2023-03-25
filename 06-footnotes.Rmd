@@ -1,6 +1,6 @@
 # Footnotes
 
-We can add footnotes using [\^1] like this [^1]
+This is an example of a footnote [^1]
 
 
-[^1]: This is the first footnote
+[^1]: This is the explanation of the footnote

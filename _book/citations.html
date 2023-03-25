@@ -154,11 +154,10 @@ div.csl-indent {
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html"><i class="fa fa-check"></i><b>1</b> Numbered and unnumbered headings</a>
+<li class="chapter" data-level="1" data-path="headers.html"><a href="headers.html"><i class="fa fa-check"></i><b>1</b> Headers</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#numbered-headings"><i class="fa fa-check"></i><b>1.1</b> Numbered headings</a></li>
-<li class="chapter" data-level="" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#unnumbered-headings"><i class="fa fa-check"></i>Unnumbered headings</a></li>
-<li class="chapter" data-level="1.2" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#headings-in-table-of-contents"><i class="fa fa-check"></i><b>1.2</b> headings in table of contents</a></li>
+<li class="chapter" data-level="1.1" data-path="headers.html"><a href="headers.html#a-numbered-subheader"><i class="fa fa-check"></i><b>1.1</b> A numbered subheader</a></li>
+<li class="chapter" data-level="" data-path="headers.html"><a href="headers.html#an-unnumbered-subheader"><i class="fa fa-check"></i>An unnumbered subheader</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="table-of-contents.html"><a href="table-of-contents.html"><i class="fa fa-check"></i><b>2</b> Table of contents</a></li>
 <li class="chapter" data-level="3" data-path="citations.html"><a href="citations.html"><i class="fa fa-check"></i><b>3</b> Citations</a></li>
@@ -167,9 +166,18 @@ div.csl-indent {
 <li class="chapter" data-level="4.1" data-path="numbered-tables-and-figures.html"><a href="numbered-tables-and-figures.html#tables"><i class="fa fa-check"></i><b>4.1</b> Tables</a></li>
 <li class="chapter" data-level="4.2" data-path="numbered-tables-and-figures.html"><a href="numbered-tables-and-figures.html#figures"><i class="fa fa-check"></i><b>4.2</b> Figures</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html"><i class="fa fa-check"></i><b>5</b> Referencing tables and figures</a></li>
+<li class="chapter" data-level="5" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html"><i class="fa fa-check"></i><b>5</b> Referencing Tables and Figures</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html#referencing-tables"><i class="fa fa-check"></i><b>5.1</b> Referencing tables</a></li>
+<li class="chapter" data-level="5.2" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html#referencing-figures"><i class="fa fa-check"></i><b>5.2</b> Referencing figures</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>6</b> Footnotes</a></li>
-<li class="chapter" data-level="7" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html"><i class="fa fa-check"></i><b>7</b> Mathematical formulas and expressions</a></li>
+<li class="chapter" data-level="7" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html"><i class="fa fa-check"></i><b>7</b> Mathematical formulas and expressions</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#inline"><i class="fa fa-check"></i><b>7.1</b> Inline</a></li>
+<li class="chapter" data-level="7.2" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#paragraphed"><i class="fa fa-check"></i><b>7.2</b> Paragraphed</a></li>
+<li class="chapter" data-level="7.3" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#multi-step"><i class="fa fa-check"></i><b>7.3</b> Multi step</a></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>8</b> Bibliography</a></li>
 </ul>
 
@@ -190,12 +198,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="citations" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">3</span> Citations<a href="citations.html#citations" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Reference items in your bibliography file(s) using <span class="citation">(<a href="#ref-key" role="doc-biblioref"><strong>key?</strong></a>)</span>.
-In the index.Rmd file, in the YAML pass the .bib files to the bibliography key.
-In this YAML there are a few options to style your citations.
-For example when we write</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb3-1"><a href="citations.html#cb3-1" aria-hidden="true" tabindex="-1"></a>R Markdown <span class="co">[</span><span class="ot">@xie2015</span><span class="co">]</span></span></code></pre></div>
-<p>We get: R Markdown <span class="citation">(<a href="#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span></p>
+<p>Example of a citation <span class="citation">(<a href="#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span></p>
 
 </div>
 <h3> Bibliography<a href="bibliography.html#bibliography" class="anchor-section" aria-label="Anchor link to header"></a></h3>

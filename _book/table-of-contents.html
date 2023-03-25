@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="numbered-and-unnumbered-headings.html"/>
+<link rel="prev" href="headers.html"/>
 <link rel="next" href="citations.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -154,11 +154,10 @@ div.csl-indent {
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html"><i class="fa fa-check"></i><b>1</b> Numbered and unnumbered headings</a>
+<li class="chapter" data-level="1" data-path="headers.html"><a href="headers.html"><i class="fa fa-check"></i><b>1</b> Headers</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#numbered-headings"><i class="fa fa-check"></i><b>1.1</b> Numbered headings</a></li>
-<li class="chapter" data-level="" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#unnumbered-headings"><i class="fa fa-check"></i>Unnumbered headings</a></li>
-<li class="chapter" data-level="1.2" data-path="numbered-and-unnumbered-headings.html"><a href="numbered-and-unnumbered-headings.html#headings-in-table-of-contents"><i class="fa fa-check"></i><b>1.2</b> headings in table of contents</a></li>
+<li class="chapter" data-level="1.1" data-path="headers.html"><a href="headers.html#a-numbered-subheader"><i class="fa fa-check"></i><b>1.1</b> A numbered subheader</a></li>
+<li class="chapter" data-level="" data-path="headers.html"><a href="headers.html#an-unnumbered-subheader"><i class="fa fa-check"></i>An unnumbered subheader</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="table-of-contents.html"><a href="table-of-contents.html"><i class="fa fa-check"></i><b>2</b> Table of contents</a></li>
 <li class="chapter" data-level="3" data-path="citations.html"><a href="citations.html"><i class="fa fa-check"></i><b>3</b> Citations</a></li>
@@ -167,9 +166,18 @@ div.csl-indent {
 <li class="chapter" data-level="4.1" data-path="numbered-tables-and-figures.html"><a href="numbered-tables-and-figures.html#tables"><i class="fa fa-check"></i><b>4.1</b> Tables</a></li>
 <li class="chapter" data-level="4.2" data-path="numbered-tables-and-figures.html"><a href="numbered-tables-and-figures.html#figures"><i class="fa fa-check"></i><b>4.2</b> Figures</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html"><i class="fa fa-check"></i><b>5</b> Referencing tables and figures</a></li>
+<li class="chapter" data-level="5" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html"><i class="fa fa-check"></i><b>5</b> Referencing Tables and Figures</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html#referencing-tables"><i class="fa fa-check"></i><b>5.1</b> Referencing tables</a></li>
+<li class="chapter" data-level="5.2" data-path="referencing-tables-and-figures.html"><a href="referencing-tables-and-figures.html#referencing-figures"><i class="fa fa-check"></i><b>5.2</b> Referencing figures</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>6</b> Footnotes</a></li>
-<li class="chapter" data-level="7" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html"><i class="fa fa-check"></i><b>7</b> Mathematical formulas and expressions</a></li>
+<li class="chapter" data-level="7" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html"><i class="fa fa-check"></i><b>7</b> Mathematical formulas and expressions</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#inline"><i class="fa fa-check"></i><b>7.1</b> Inline</a></li>
+<li class="chapter" data-level="7.2" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#paragraphed"><i class="fa fa-check"></i><b>7.2</b> Paragraphed</a></li>
+<li class="chapter" data-level="7.3" data-path="mathematical-formulas-and-expressions.html"><a href="mathematical-formulas-and-expressions.html#multi-step"><i class="fa fa-check"></i><b>7.3</b> Multi step</a></li>
+</ul></li>
 <li class="chapter" data-level="8" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>8</b> Bibliography</a></li>
 </ul>
 
@@ -190,16 +198,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="table-of-contents" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">2</span> Table of contents<a href="table-of-contents.html#table-of-contents" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In the YAML we can put toc: true or configure the toc depending on the template.</p>
-<p>For example the gitbook template has a floating side toc enabled by default.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="table-of-contents.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="table-of-contents.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  bookdown:</span><span class="fu">:gitbook</span><span class="kw">:</span><span class="at"> default</span></span></code></pre></div>
-<p>using html_document2 we can create the same</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="table-of-contents.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
-<span id="cb2-2"><a href="table-of-contents.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  bookdown:</span><span class="fu">:html_document2</span><span class="kw">:</span></span>
-<span id="cb2-3"><a href="table-of-contents.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb2-4"><a href="table-of-contents.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc_float</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code></pre></div>
-<p>if we omit <em>toc_float</em> we get a large one page book with a toc at the start.</p>
+<p>The table of contents is visible at the side of the page.</p>
 
 </div>
             </section>
@@ -207,7 +206,7 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="numbered-and-unnumbered-headings.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="headers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="citations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
